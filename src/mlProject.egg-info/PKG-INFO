@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mlProject
+Version: 0.0.0
+Summary: A small python package for ml app
+Home-page: https://github.com/shalmali30/EndToEndMachineLearningProject
+Author: shalmali30
+Author-email: limbkar.shalmali30@gmail.com
+Project-URL: Bug Tracker, https://github.com/shalmali30/EndToEndMachineLearningProject/issues
+License-File: LICENSE
+
+# EndToEndMachineLearningProject
+End to end ML project  for Red wine quality prediction
