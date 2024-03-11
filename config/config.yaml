@@ -1,0 +1,8 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion  #download the data from url, and store in artifact/data_ingestion folder instead storing it in main folder wine.zip and unzip
+  source_URL: https://github.com/shalmali30/EndToEndMachineLearningProject/raw/main/winequality-data.zip  
+  local_data_file: artifacts/data_ingestion/data.zip  #data.zip will the name of the downloaded file 
+  unzip_dir: artifacts/data_ingestion
