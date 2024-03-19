@@ -14,7 +14,7 @@ logger.info("This is our custome logging")
 
 from mlProject import logger
 from mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
-
+from mlProject.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 
 
 STAGE_NAME = "Data Ingestion stage"
@@ -32,3 +32,14 @@ except Exception as e:
 # To test the whole modular coding for 01_data_ingestion, once you have copied code from notebook in respective folders,
 
 # delete the artifact folder, delete log file and exceute main.py from terminal 
+
+STAGE_NAME = "Data Validation stage"
+
+try:
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   data_ingestion = DataValidationTrainingPipeline()
+   data_ingestion.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e

@@ -7,3 +7,10 @@ class DataIngestionConfig:   # This is entity and this is return type of class t
     source_URL: str
     local_data_file: Path
     unzip_dir: Path
+
+@dataclass(frozen=True)
+class DataValidationConfig:
+    root_dir: Path
+    STATUS_FILE: str
+    unzip_data_dir: Path
+    all_schema: dict   # Yaml file always return dictionary format , so datatype is Dict

@@ -6,3 +6,13 @@ data_ingestion:
   source_URL: https://github.com/shalmali30/EndToEndMachineLearningProject/raw/main/winequality-data.zip  
   local_data_file: artifacts/data_ingestion/data.zip  #data.zip will the name of the downloaded file 
   unzip_dir: artifacts/data_ingestion
+
+
+data_validation:
+  root_dir: artifacts/data_validation
+  unzip_data_dir: artifacts/data_ingestion/winequality-red.csv
+  STATUS_FILE: artifacts/data_validation/status.txt  #if all the columns are availble in the schema, in status.txt file it will return True.
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/winequality-red.csv
