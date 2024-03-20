@@ -1,1 +1,20 @@
-key: val  #dummy key value needed at first
+# key: val  #dummy key value needed at first
+
+ElasticNet:
+  alpha: 0.1
+  l1_ratio: 0.1
+
+  # we can use any model. we can find the parameter on sk learn website
+
+
+
+## alpha : controls the regularization strength. Higher values of alpha increase the regularization, leading to simpler models with smaller coefficients.
+## l1_ratio : is the mixing parameter between L1 (Lasso) and L2 (Ridge) regularization. A value of 1 corresponds to pure Lasso, a value of 0 corresponds to pure Ridge, and values between 0 and 1 correspond to a mixture of both.
+
+# ElasticNet is a linear regression model that combines the properties of both Lasso (L1 regularization) and Ridge (L2 regularization) regression. It adds both the penalties of L1 and L2 regularization to the ordinary least squares loss function.
+
+# L1 Regularization (Lasso): Encourages sparsity by adding the absolute values of the coefficients as a penalty term to the loss function. This can lead to some coefficients being exactly zero, effectively performing feature selection.
+
+# L2 Regularization (Ridge): Adds the squared magnitudes of the coefficients as a penalty term to the loss function, which tends to shrink the coefficients towards zero, but without necessarily eliminating them entirely.
+
+# By combining these two regularization techniques, ElasticNet is able to handle multicollinearity (correlated predictors) better than Lasso, while still performing feature selection like Lasso.
